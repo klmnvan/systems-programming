@@ -16,12 +16,26 @@
 typedef int (*fp_int)(int, int); //указатель на функцию
 typedef fp_int* parr; //массив указателей на функцию? (делегат?)
 
+/// <summary>
+/// Добавление делегата в массив
+/// </summary>
+/// <param name="array_delegate"></param>
+/// <param name="new_func"></param>
+/// <param name="size"></param>
+/// <returns></returns>
 fp_int add_delegat(parr array_delegate, fp_int new_func, int size) {
 	array_delegate = realloc(array_delegate, sizeof(fp_int) * (size + 1));
 	array_delegate[size] = new_func;
 	return array_delegate;
 }
 
+/// <summary>
+/// Удаление делегата из массива
+/// </summary>
+/// <param name="array_delegate"></param>
+/// <param name="new_func"></param>
+/// <param name="size"></param>
+/// <returns></returns>
 fp_int delete_delegat(parr array_delegate, fp_int new_func, int size) {
 	for (size_t i = 0; i < size; i++)
 	{
@@ -41,6 +55,14 @@ fp_int delete_delegat(parr array_delegate, fp_int new_func, int size) {
 	return array_delegate;
 }
 
+
+/// <summary>
+/// Запуск всех фукнций
+/// </summary>
+/// <param name="array_delegate"></param>
+/// <param name="size"></param>
+/// <param name="a"></param>
+/// <param name="b"></param>
 void start_all_fucntion(parr array_delegate, int size, int a, int b) {
 	for (size_t i = 0; i < size; i++)
 	{
@@ -49,6 +71,12 @@ void start_all_fucntion(parr array_delegate, int size, int a, int b) {
 	}
 }
 
+/// <summary>
+/// Удаляет из массива фукнций дубликаты
+/// </summary>
+/// <param name="array_delegate"></param>
+/// <param name="size"></param>
+/// <returns></returns>
 parr get_distinct_parr(parr array_delegate, int size) {
 	for (size_t i = 0; i < size; i++)
 	{
