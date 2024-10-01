@@ -1,12 +1,12 @@
 #pragma once
 //ЗАДАНИЕ НА СОЗДАНИЕ ДЕЛЕГАТОВ
 
-//определить указатель на функцию и массив указателей на функцию как новый тип данных
-//реализовать функцию добавления функций в делегат
-//реализовать функцию удаления функций из делегата
-//реализовать функцию запуска всех функций из делегата
-//реализовать функцию по удалению всех повторяющихся функций 
-//в делегате(чтобы каждая функция встречалась только один раз)
+//1. Определить указатель на функцию и массив указателей на функцию как новый тип данных
+//2. Реализовать функцию добавления функций в делегат
+//3. Реализовать функцию удаления функций из делегата
+//4. Реализовать функцию запуска всех функций из делегата
+//5. Реализовать функцию по удалению всех повторяющихся функций 
+//   в делегате(чтобы каждая функция встречалась только один раз)
 
 //Делегат — это тип, который представляет ссылки на методы с 
 //определённым списком параметров и типом возвращаемого значения.
@@ -44,7 +44,8 @@ fp_int delete_delegat(parr array_delegate, fp_int new_func, int size) {
 void start_all_fucntion(parr array_delegate, int size, int a, int b) {
 	for (size_t i = 0; i < size; i++)
 	{
-		printf("%d\n", array_delegate[i](a, b));
+		printf("%d\n", (*array_delegate)(a, b));
+		array_delegate++;
 	}
 }
 
@@ -84,26 +85,36 @@ int proiz(int a, int b) {
 	return a * b;
 }
 
-void T3Z1() {
-	parr array_delegate = malloc(0 * sizeof(fp_int));
-	//тут происходит добавление
+void T3Z5() {
+	parr array_delegate = malloc(0 * sizeof(fp_int)); 
 	array_delegate = add_delegat(array_delegate, sum, 0);
-	array_delegate = add_delegat(array_delegate, sum, 0);
-	array_delegate = add_delegat(array_delegate, razn, 1);
-	array_delegate = add_delegat(array_delegate, razn, 1);
-	array_delegate = add_delegat(array_delegate, proiz, 2);
-	array_delegate = add_delegat(array_delegate, proiz, 2);
+	array_delegate = add_delegat(array_delegate, sum, 1);
+	array_delegate = add_delegat(array_delegate, razn, 2);
 	array_delegate = add_delegat(array_delegate, razn, 3);
-	array_delegate = add_delegat(array_delegate, proiz, 2);
-
+	array_delegate = add_delegat(array_delegate, proiz, 4);
+	array_delegate = add_delegat(array_delegate, proiz, 5);
+	array_delegate = add_delegat(array_delegate, razn, 6);
+	array_delegate = add_delegat(array_delegate, proiz, 7);
+	printf("Добавили 8 функций с повторениями в массив\n");
+	printf("Запуск:\n");
+	start_all_fucntion(array_delegate, 8, 10, 5);
 	array_delegate = get_distinct_parr(array_delegate, 8);
+	printf("Удалили дубликаты\n");
+	printf("Запуск:\n");
 	start_all_fucntion(array_delegate, 3, 10, 5);
+}
 
-	//тут происходит демонстрация добавления
-	//start_all_fucntion(array_delegate, 3, 10, 5);
-	////тут происходит удаление
-	//array_delegate = delete_delegat(array_delegate, razn, 3);
-	////тут происходит запуск всех функций
-	//start_all_fucntion(array_delegate, 2, 10, 5);
+void T3Z1_2_3_4() {
+	parr array_delegate = malloc(0 * sizeof(fp_int));
+	array_delegate = add_delegat(array_delegate, sum, 0);
+	array_delegate = add_delegat(array_delegate, proiz, 1);
+	array_delegate = add_delegat(array_delegate, razn, 2);
+	printf("Добавили 3 функции в массив\n");
+	printf("Запуск:\n");
+	start_all_fucntion(array_delegate, 3, 10, 5);
+	array_delegate = delete_delegat(array_delegate, proiz, 3);
+	printf("Удалили из массива функцию из центра\n");
+	printf("Запуск:\n");
+	start_all_fucntion(array_delegate, 2, 10, 5);
 }
 
