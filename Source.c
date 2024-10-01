@@ -1,0 +1,118 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <malloc.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include <stdbool.h>
+#include "Theme1.h"
+#include "Theme2.h"
+#include "Theme3.h"
+
+void theme3() {
+	int task;
+	printf("1. Редактирование и вывод значения целочисленной при обращении к ней из консольного окна.\n");
+	printf("Введите номер задания (1-5): ");
+	scanf("%d", &task);
+	printf("\n");
+	switch (task)
+	{
+	case 1:
+		T3Z1();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
+void theme2() {
+	int task;
+	printf("1. Редактирование и вывод значения целочисленной при обращении к ней из консольного окна.\n");
+	printf("2. Динамическое создание и удаление массива из одного миллиона элементов типа int. значения элементов массива должны быть равны значению их индексов.\n");
+	printf("3. Функция для вывода на экран консоли массива произвольной длины (сам массив передается в качестве аргумента функции).\n");
+	printf("4. Используя указатели, сформировать треугольную матрицу.\n");
+	printf("5. Написать программу с использованием указателя на функцию и с использованием указателя на функцию в качестве аргумента.\n");
+	printf("Введите номер задания (1-5): ");
+	scanf("%d", &task);
+	printf("\n");
+	switch (task)
+	{
+	case 1:
+		T2Z1();
+		break;
+	case 2:
+		T2Z2();
+		break;
+	case 3:
+		T2Z2();
+		break;
+	case 4:
+		T2Z4();
+		break;
+	case 5:
+		T2Z5();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
+void theme1() {
+	int task;
+	printf("1. Квадратное уравнение.\n");
+	printf("2. Система двух линейных уравнений.\n");
+	printf("3. Перестановки (факториал).\n");
+	printf("Введите номер задания (1-3): ");
+	scanf("%d", &task);
+	printf("\n");
+	switch (task)
+	{
+	case 1:
+		T1Z1();
+		break;
+	case 2:
+		T1Z2();
+		break;
+	case 3:
+		T1Z3();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
+//Стартовая точка в программе
+void main(void)
+{
+	setlocale(LC_ALL, "Russian_Russia.1251");
+	srand(clock());
+	//theme2();
+	int theme;
+	printf("Перечень тем:\n");
+	printf("1. Входной контроль.\n");
+	printf("2. Указатели.\n");
+	printf("3. Делегаты.\n");
+	printf("Введите номер темы (1-*): ");
+	scanf("%d", &theme);
+	printf("\n");
+	switch (theme)
+	{
+	case 1:
+		theme1();
+		break;
+	case 2:
+		theme2();
+		break;
+	case 3:
+		theme3();
+		break;
+	default:
+		printf("Такой темы нет");
+		break;
+	}
+}
+
+//Help D:

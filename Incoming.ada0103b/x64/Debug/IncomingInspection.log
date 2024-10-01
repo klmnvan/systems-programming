@@ -1,0 +1,119 @@
+﻿  Source.c
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(40,35): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(40,35): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(47,13): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(47,13): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(52,13): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(52,13): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(39,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(43,10): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(72,35): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[6]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(72,35): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(77,12): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(77,12): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(71,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(75,10): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(104,28): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[1]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(104,28): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(115,29): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(117,11): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[1]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(117,11): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(99,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(114,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [10]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(10,9): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "int *"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(10,9): warning C4313: printf: конфликт "%d" в строке формата с аргументом 1 типа "int *"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(9,7): warning C4047: инициализация: "int *" отличается по уровням косвенного обращения от "int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(23,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(53,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+  (компиляция исходного файла "Source.c")
+  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(53,10):
+  рекомендуется использовать "%zd" в строке форматирования
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(60,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+  (компиляция исходного файла "Source.c")
+  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(60,10):
+  рекомендуется использовать "%zd" в строке форматирования
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(21,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(40,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(89,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(90,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(91,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(92,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(93,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(94,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(95,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(96,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Source.c(91,2): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Source.c(91,8): warning C4013: clock: нет определения; предполагается "extern" с возвратом типа "int"
+  IncomingInspection.vcxproj -> D:\VS prodjects\IncomingInspection\IncomingInspection\x64\Debug\IncomingInspection.exe
