@@ -58,9 +58,10 @@ void T2Z2() {
 /// и тд.
 /// </summary>
 void T2Z4() {
-	int n = 100;
+	int n = 10;
 	int count = 0;
-	/* Способ первый значит, читерский
+	/* 
+	//Способ первый значит, читерский
 	int** arr = malloc(n * sizeof(int*)); 
 	for (size_t i = 1; i <= n; i++)
 	{
@@ -74,24 +75,47 @@ void T2Z4() {
 		*(arr + (i - 1)) = arr2;
 	}
 	*/
+
 	//Способ второй и наверняка верный
-	int** arr = malloc(n * sizeof(int*)); 
+	int** arr = malloc(n * sizeof(int*));
 	int** golova1 = arr; //сохраняем голову
 	for (size_t i = 1; i <= n; i++)
 	{
-		*arr = malloc(i * 4); 
+		*arr = malloc(i * 4);
 		int* golova2 = *arr;
-		for (size_t j = 0; j < i; j++) {
-			**arr = count;
-			printf("%d ", **arr);
-			(*arr)++;
-			count++;
+		for (size_t j = 0; j < i; j++) 
+		{
+			**arr = count++; //сначала присваивание, потом ++
+			(*arr)++; //обращение к указателю на первый в данный момент массив в двумерном массиве и сдвиг его на sizeof(int)
+		}
+		*arr++ = golova2; //сначала присваивание, потом ++ (плюсам на * пофиг)
+	}
+
+	//приколюха с передвижением указателей
+	/*for (int i = 0; i < n; i++) {
+		*arr = (int*)malloc((i + 1) * sizeof(int));
+		int* golova2 = *arr;
+		for (int j = 0; j <= i; j++) {
+			*golova2 = count++;
+			golova2++;
+		}
+		*arr++;
+	}*/
+
+	arr = golova1;
+	for (size_t i = 1; i <= n; i++)
+	{
+		int* golova2 = *arr;
+		for (size_t j = 0; j < i; j++) 
+		{
+			printf("%d\t", **arr);
+			(*arr)++; //
 		}
 		printf("\n");
-		*arr = golova2;
-		arr++;
+		*arr++ = golova2;
 	}
 	arr = golova1;
+	int b = 5;
 }
 
 /// <summary>

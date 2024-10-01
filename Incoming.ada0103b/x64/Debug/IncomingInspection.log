@@ -65,20 +65,23 @@ D:\VS prodjects\IncomingInspection\IncomingInspection\Theme1.h(115,9): warning C
 D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(43,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
   (компиляция исходного файла "Source.c")
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(103,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(127,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
   (компиляция исходного файла "Source.c")
-  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(103,10):
+  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(127,10):
   рекомендуется использовать "%zd" в строке форматирования
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(113,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(137,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
   (компиляция исходного файла "Source.c")
-  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(113,10):
+  D:\VS prodjects\IncomingInspection\IncomingInspection\Theme2.h(137,10):
   рекомендуется использовать "%zd" в строке форматирования
   
 D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(22,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
   (компиляция исходного файла "Source.c")
   
 D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(41,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(90,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
 D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(91,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
@@ -102,19 +105,16 @@ D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(96,17): warning C
 D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(97,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(98,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(109,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(118,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(110,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(119,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(111,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(120,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
-  (компиляция исходного файла "Source.c")
-  
-D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(126,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+D:\VS prodjects\IncomingInspection\IncomingInspection\Theme3.h(115,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
 D:\VS prodjects\IncomingInspection\IncomingInspection\Source.c(95,2): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
