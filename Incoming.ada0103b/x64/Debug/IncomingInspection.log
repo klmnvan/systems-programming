@@ -117,6 +117,6 @@ C:\Users\климычевааа\source\repos\systems-programming\Theme3.h(139,17
 C:\Users\климычевааа\source\repos\systems-programming\Theme3.h(143,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
   (компиляция исходного файла "Source.c")
   
-C:\Users\климычевааа\source\repos\systems-programming\Source.c(95,2): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
-C:\Users\климычевааа\source\repos\systems-programming\Source.c(95,8): warning C4013: clock: нет определения; предполагается "extern" с возвратом типа "int"
-  IncomingInspection.vcxproj -> C:\Users\климычевааа\source\repos\systems-programming\x64\Debug\IncomingInspection.exe
+C:\Users\климычевааа\source\repos\systems-programming\Source.c(125,2): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\климычевааа\source\repos\systems-programming\Source.c(125,8): warning C4013: clock: нет определения; предполагается "extern" с возвратом типа "int"
+  IncomingInspection.vcxproj -> C:\Users\климычевааа\Source\Repos\systems-programming\x64\Debug\IncomingInspection.exe
