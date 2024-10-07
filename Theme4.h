@@ -38,16 +38,34 @@ void showList(li* list)
 /// Вставка элемента в список
 /// </summary>
 /// <param name="list">указатель на начало списка</param>
-void insertValue(li* list, int index, li* newValue)
+li* insertValue(li* list, int index, li* newValue)
 {
-	for (int i = 0; i < index; i++) 
-	{
-		list = list->next; //начало деления
+	li* start = malloc(sizeof(li));
+	start->id = list->id;
+	start->next = list->next;
+	if (index == 0) {
+		li* temp = start;
+		start = newValue;
+		newValue->next = temp;
 	}
-
-	li* list2 = list->next; //конец деления
-	list->next = newValue;
-	newValue->next = list2;
+	else
+	{
+		for (int i = 0; i < index-1; i++)
+		{
+			list = list->next; //начало деления
+		}
+		if (list->next != NULL) {
+			li* list2 = list->next; //конец деления
+			list->next = newValue;
+			newValue->next = list2;
+		}
+		else
+		{
+			list->next = newValue;
+		}
+		int b = 0;
+	}
+	return start;
 }
 
 /// <summary>
@@ -92,7 +110,11 @@ void T4Z2()
 	}
 	showList(start);
 	li newItem = { 10, NULL };
-	insertValue(start, 2, &newItem);
+	start = insertValue(start, 5, &newItem);
+	showList(start);
+	start = insertValue(start, 0, &newItem);
+	showList(start);
+	start = insertValue(start, 2, &newItem);
 	showList(start);
 }
 
