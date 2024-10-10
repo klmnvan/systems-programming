@@ -1,17 +1,23 @@
 #pragma once
 //ЗАДАНИЕ НА ЛИНЕЙНЫЕ ОДНОСВЯЗНЫЕ СПИСКИ
 
-//Создайте линейный список структур(с помощью отдельной функции).
-//Определителем элемента списка является числовое поле, содержащее его порядковый номер
+/*
+Создайте линейный список структур(с помощью отдельной функции).
+Определителем элемента списка является числовое поле, содержащее его порядковый номер
+*/
 
-//Опишите дополнительно следующие функции:
-//  --удаление списка
-//  --вставка элемента внутрь списка
-//  --удаление элемента из списка
-//  --замена двух элементов местами
+/*
+Опишите дополнительно следующие функции:
+  - удаление списка
+  - вставка элемента внутрь списка
+  - удаление элемента из списка
+  - замена двух элементов местами
+*/
 
-//В качестве дополнительного задания модифицировать список таким образом, 
-//чтобы определителем его элемента являлось слово
+/*
+В качестве дополнительного задания модифицировать список таким образом,
+чтобы определителем его элемента являлось слово
+*/
 
 struct ListItem
 {
@@ -19,6 +25,48 @@ struct ListItem
 	struct ListItem* next; //Ссылка на следующий элемент списка
 }; 
 typedef struct ListItem li;
+
+li* createList(int);
+void showList(li*);
+li* insert(li*, li, int);
+li* getItemByInd(li*, int);
+li* deleteLIByInd(li*, int);
+void freeList(li*);
+li* swapItems(li*, int, int);
+
+/// <summary>
+/// Создание линейного списка структур из 10 элементов и вывод
+/// </summary>
+void T4Z1()
+{
+	li* list = createList(10);
+	showList(list);
+}
+
+/// <summary>
+/// Создание односвязного списка
+/// </summary>
+/// <param name="count">количество элементов</param>
+/// <returns>указатель на начало списка</returns>
+li* createList(int count)
+{
+	li *start = malloc(sizeof(li));
+	start->id = 1;
+	start->next = NULL;
+
+	li *p, *n; //указатель на предыдущий и следующий элемент
+	p = start;
+
+	//(count - 1) - потому что первый элемент уже создан
+	for (int i = 0; i < count - 1; i++) {
+		n = malloc(sizeof(li)); //выделили память под следующий элемент
+		n->id = p->id + 1;
+		p->next = n;
+		p = n;
+	}
+	p->next = NULL;
+	return start;
+}
 
 /// <summary>
 /// Вывод всех элементов списка
@@ -35,170 +83,174 @@ void showList(li* list)
 }
 
 /// <summary>
-/// Вставка элемента в список
+/// Вставка элементов внутрь списка, удаление элемента из списка и удаление списка.
+/// </summary>
+void T4Z2()
+{
+	li* list = createList(10);
+	showList(list);
+	li item = { 88, NULL };
+	printf("вставка в самый конец\n");
+	list = insert(list, item, 10); //вставка в самый конец
+	showList(list);
+	printf("удалили с конца\n");
+	list = deleteLIByInd(list, 10); //удалили с конца
+	showList(list);
+	li item1 = { 88, NULL };
+	printf("вставка в самое начало\n");
+	list = insert(list, item1, 0); //вставка в самое начало
+	showList(list);
+	printf("удалили с самого начала\n");
+	list = deleteLIByInd(list, 0); //удалили с самого начала
+	showList(list);
+	li item2 = { 88, NULL };
+	printf("вставка на второе место\n");
+	list = insert(list, item1, 1); //вставка на второе место
+	showList(list);
+	printf("удалили с второго места\n");
+	list = deleteLIByInd(list, 1); //удалили с второго места
+	showList(list);
+	li item3 = { 88, NULL };
+	printf("вставка в центр\n");
+	list = insert(list, item1, 5); //вставка в центр
+	showList(list);
+	printf("удалили с центра\n");
+	list = deleteLIByInd(list, 5); //удалили с центра
+	showList(list);
+	freeList(list); //удалили
+}
+
+/// <summary>
+/// Вставка в список элемента
 /// </summary>
 /// <param name="list">указатель на начало списка</param>
-li* insertValue(li* list, int index, li* newValue)
+/// <param name="item">вставляемый элемент</param>
+/// <param name="index">индекс, на какое место нужно вставить элемент</param>
+/// <returns>указатель на начало списка</returns>
+li* insert(li* list, li item, int index) 
 {
-	li* start = malloc(sizeof(li));
-	start->id = list->id;
-	start->next = list->next;
-	if (index == 0) {
-		li* temp = start;
-		start = newValue;
-		newValue->next = temp;
+	li* newItem = malloc(sizeof(li));
+	newItem->id = item.id;
+	
+	//обработка случая, когда index = 0
+	if (index == 0) 
+	{
+		newItem->next = list;
+		list = newItem;
 	}
 	else
 	{
-		for (int i = 0; i < index-1; i++)
+		void* start = list; //сохранение головы
+		//переходим в списке на элемент по индксу index - 1 (чтобы у него в next поставить на правильный индекс новый элемент)
+		list = getItemByInd(list, index - 1);
+		void* temp = list->next; //сохранили указатель на элемент, который будет стоять после вставленного
+		list->next = newItem;
+		newItem->next = temp;
+		list = start;
+	}
+	return list;
+}
+
+/// <summary>
+/// Метод, который возвращается указатель на n-ый элемент списка.
+/// При превышении количества элементов в списке, будет возвращён последний
+/// </summary>
+/// <param name="list">указатель на начало списка</param>
+/// <param name="index">индекс элемента</param>
+/// <returns>указатель на начало списка</returns>
+li* getItemByInd(li* list, int index)
+{
+	for (int i = 0; i < index; i++)
+	{
+		if (list->next != NULL) list = list->next;
+		else break;
+	}
+	return list;
+}
+
+/// <summary>
+/// Удаление элемента из листа по его индексу
+/// </summary>
+/// <param name="list">указатель на начало списка</param>
+/// <param name="index">индекс нужного элемента</param>
+/// <returns>указатель на начало списка</returns>
+li* deleteLIByInd(li* list, int index) 
+{
+	li* start = list;
+	if (index == 0) 
+	{
+		start = list->next;
+		free(list); //удалили элемент с начала 
+	} 
+	else
+	{
+		li* delLI = getItemByInd(list, index); //удаляемый элемент
+		li* pDelLI = getItemByInd(list, index - 1); //элемент до удалённого
+		if (delLI->next != NULL) 
 		{
-			list = list->next; //начало деления
-		}
-		if (list->next != NULL) {
-			li* list2 = list->next; //конец деления
-			list->next = newValue;
-			newValue->next = list2;
+			li* nDelLI = getItemByInd(list, index + 1); //элемент после удалённого
+			pDelLI->next = nDelLI;
 		}
 		else
 		{
-			list->next = newValue;
+			pDelLI->next = NULL;
 		}
-		int b = 0;
+		free(delLI); //освободили память
 	}
 	return start;
 }
 
 /// <summary>
-/// Создание линейного списка структур из 10 элементов и вывод
-/// </summary>
-void T4Z1() 
-{
-	li* early = malloc(sizeof(li)); //Создание начала списка, первого элемента
-	early->id = 0;
-	early->next = NULL;
-
-	li* start = early; //Запомнили начало списка
-
-	for (int i = 1; i < 10; i++) 
-	{
-		li* next = malloc(sizeof(li));
-		next->next = NULL;
-		next->id = i;
-		early->next = next;
-		early = next;		
-	}
-	showList(start);
-}
-
-/// <summary>
-/// Вставка элементов внутрь списка, удаление элемента из списка и удаление списка.
-/// </summary>
-void T4Z2() 
-{
-	li* early = malloc(sizeof(li)); //Создание начала списка, первого элемента
-	early->id = 0;
-	early->next = NULL;
-	li* start = early; //Запомнили начало списка
-
-	for (int i = 1; i < 5; i++)
-	{
-		li* next = malloc(sizeof(li));
-		next->next = NULL;
-		next->id = i;
-		early->next = next;
-		early = next;
-	}
-	showList(start);
-	li newItem = { 10, NULL };
-	start = insertValue(start, 5, &newItem);
-	showList(start);
-	start = insertValue(start, 0, &newItem);
-	showList(start);
-	start = insertValue(start, 2, &newItem);
-	showList(start);
-}
-
-/// <summary>
-/// Замена элементов местами
+/// Очищает память списка
 /// </summary>
 /// <param name="list">указатель на начало списка</param>
-li* swapValues(li* list, int indItem1, int indItem2)
+void freeList(li* list) 
 {
-	//printf("Память: %d", m_size(list));
-	li* start = list;
-	li* item1 = NULL;
-	li* beforeItem1 = NULL;
-	li* afterItem1 = NULL;
-	li* item2 = NULL;
-	li* beforeItem2 = NULL;
-	li* afterItem2 = NULL;
-	int count = 0;
-	while(list != NULL)
+	li* n = list; //следующее значение
+	while (n != NULL) //пока следующий не равен NULL
 	{
-		if (count == indItem1 - 1) beforeItem1 = list; 
-		if (count == indItem1)
-		{
-			item1 = list;
-			if (item1->next != NULL) afterItem1 = item1->next;
-		}
-		if (count == indItem2 - 1) beforeItem2 = list;
-		if (count == indItem2) 
-		{
-			item2 = list;
-			if (item2->next != NULL) afterItem2 = item2->next;
-		}
-		list = list->next;
-		count++;
+		n = list->next;
+		free(list);
+		list = n;
 	}
-	li* temp = malloc(sizeof(li));
-	if (beforeItem1 != NULL) beforeItem1->next = item2;
-	if (afterItem1 != NULL) {
-		temp = item2->next;
-		item2->next = item1->next;
-	}
-	else
-	{
-		item2->next = NULL;
-	}
-	if (beforeItem2 != NULL) beforeItem2->next = item1;
-	if (afterItem2 != NULL) item1->next = temp;
-	else
-	{
-		item1->next = NULL;
-	}
-	if(beforeItem1 == NULL) start = item2;
-	if(beforeItem2 == NULL) start = item1;
-	return start;
 }
 
 /// <summary>
 /// Замена двух элементов местами
 /// </summary>
-void T4Z3() 
+void T4Z3()
 {
-	li* early = malloc(sizeof(li)); //Создание начала списка, первого элемента
-	early->id = 0;
-	early->next = NULL;
-	li* start = early; //Запомнили начало списка
-
-	for (int i = 1; i < 10; i++)
-	{
-		li* next = malloc(sizeof(li));
-		next->next = NULL;
-		next->id = i;
-		early->next = next;
-		early = next;
-	}
-	showList(start);
-	printf("\n");
-	swapValues(start, 4, 7);
-	showList(start);
-	printf("\n");
-	start = swapValues(start, 0, 9);
-	showList(start);
-	//Это не работает
-	/*printf("\n"); 
-	start = swapValues(start, 0, 1);
-	showList(start);*/
+	li* list = createList(10);
+	printf("исходный вид\n");
+	showList(list);
+	printf("замена элементов с индексами 3 и 7\n");
+	list = swapItems(list, 7, 3);
+	showList(list);
+	list = swapItems(list, 7, 3); //возврат обратно
+	printf("замена элементов с индексами 0 и 1\n");
+	list = swapItems(list, 0, 1);
+	showList(list);
+	list = swapItems(list, 1, 0);
+	printf("замена элементов с индексами 0 и 9\n");
+	list = swapItems(list, 0, 9);
+	showList(list);
+	list = swapItems(list, 0, 8);
 }
 
+/// <summary>
+/// Замена элементов списка по их индексам
+/// </summary>
+/// <param name="list">указатель на начало списка</param>
+/// <param name="value1">индекс первого элемента</param>
+/// <param name="value2">индекс второго элемента</param>
+/// <returns>указатель на начало списка</returns>
+li* swapItems(li* list, int value1, int value2)
+{
+	li item1 = *(getItemByInd(list, value1)); //сохранили значение 1 элемента
+	li item2 = *(getItemByInd(list, value2)); //сохранили значение 2 элемента
+	list = deleteLIByInd(list, value1); 
+	list = insert(list, item2, value1);
+	list = deleteLIByInd(list, value2);
+	list = insert(list, item1, value2);
+	return list;
+}
