@@ -9,6 +9,24 @@
 #include "Theme2.h"
 #include "Theme3.h"
 #include "Theme4.h"
+#include "Theme5.h"
+
+void theme5() {
+	int task;
+	printf("ТЕМА: Линейные односвязные списки\n");
+	printf("Введите номер задания (1): ");
+	scanf("%d", &task);
+	printf("\n");
+	switch (task)
+	{
+	case 1:
+		T5Z1();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
 
 void theme4() {
 	int task;
@@ -121,7 +139,7 @@ void theme1() {
 //Стартовая точка в программе
 void main(void)
 {
-	setlocale(LC_ALL, "Russian_Russia.1251");
+	system("chcp 1251>nul");
 	srand(clock());
 	//theme2();
 	int theme;
@@ -130,6 +148,7 @@ void main(void)
 	printf("2. Указатели.\n");
 	printf("3. Делегаты.\n");
 	printf("4. Линейные односвязные списки.\n");
+	printf("5. Заголовочные файлы.\n");
 	printf("Введите номер темы (1-*): ");
 	scanf("%d", &theme);
 	printf("\n");
@@ -146,6 +165,9 @@ void main(void)
 		break;
 	case 4:
 		theme4();
+		break;
+	case 5:
+		theme5();
 		break;
 	default:
 		printf("Такой темы нет");

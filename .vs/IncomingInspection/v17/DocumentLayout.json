@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\VS prodjects\\systems-programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\Theme4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\CustomHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:CustomHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\Theme5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Theme4.h",
-              "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\Theme4.h",
-              "RelativeDocumentMoniker": "Theme4.h",
-              "ToolTip": "D:\\VS prodjects\\systems-programming\\Theme4.h",
-              "RelativeToolTip": "Theme4.h",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAOAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-01T09:13:59.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Source.c",
               "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "D:\\VS prodjects\\systems-programming\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAACAAAA",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAALEAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-15T12:46:19.232Z",
+              "WhenOpened": "2024-10-13T22:44:39.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Theme5.h",
+              "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\Theme5.h",
+              "RelativeDocumentMoniker": "Theme5.h",
+              "ToolTip": "D:\\VS prodjects\\systems-programming\\Theme5.h",
+              "RelativeToolTip": "Theme5.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-13T22:17:20.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomHeaders.h",
+              "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\CustomHeaders.h",
+              "RelativeDocumentMoniker": "CustomHeaders.h",
+              "ToolTip": "D:\\VS prodjects\\systems-programming\\CustomHeaders.h",
+              "RelativeToolTip": "CustomHeaders.h",
+              "ViewState": "AQIAABcAAAAAAAAAAAAswCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-13T22:00:28.389Z",
               "EditorCaption": ""
             }
           ]
