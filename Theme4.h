@@ -22,6 +22,7 @@
 struct ListItem
 {
 	int id; //ќпределитель списка?
+	char* string; //—трока
 	struct ListItem* next; //—сылка на следующий элемент списка
 }; 
 typedef struct ListItem li;
@@ -54,6 +55,7 @@ li* createList(int count)
 {
 	li *start = malloc(sizeof(li));
 	start->id = 1;
+	start->string = "Ёл. 1";
 	start->next = NULL;
 
 	li *p, *n; //указатель на предыдущий и следующий элемент
@@ -63,6 +65,9 @@ li* createList(int count)
 	for (int i = 0; i < count - 1; i++) {
 		n = malloc(sizeof(li)); //выделили пам€ть под следующий элемент
 		n->id = p->id + 1;
+		char* newStr = malloc(100 * 1);
+		sprintf(newStr, "Ёл. %d", i + 2);
+		n->string = newStr;
 		p->next = n;
 		p = n;
 	}
@@ -78,7 +83,7 @@ void showList(li* list)
 {
 	while (list != NULL) 
 	{
-		printf("%d ", list->id);
+		printf("%s ", list->string);
 		list = list->next;
 	}
 	printf("\n");
