@@ -9,7 +9,7 @@ void multiplication(int, int);
 void division(int, int);
 void difference(int, int);
 char* str_splitter(char*, char*);
-long string_to_double(char*);
+double string_to_number(char*);
 char* number_to_string(double);
 
 void addition(int a, int b) {
