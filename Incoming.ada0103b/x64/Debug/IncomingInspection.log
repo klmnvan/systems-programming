@@ -118,5 +118,5 @@ C:\Users\климычевааа\source\repos\systems-programming\Theme3.h(143,17
   (компиляция исходного файла "Source.c")
   
 C:\Users\климычевааа\source\repos\systems-programming\Source.c(143,8): warning C4013: clock: нет определения; предполагается "extern" с возвратом типа "int"
-C:\Users\климычевааа\source\repos\systems-programming\Theme4.h(329,1): warning C4715: swapItems: значение возвращается не при всех путях выполнения
+C:\Users\климычевааа\source\repos\systems-programming\Theme4.h(303,1): warning C4715: swapItems: значение возвращается не при всех путях выполнения
   IncomingInspection.vcxproj -> C:\Users\климычевааа\Source\Repos\systems-programming\x64\Debug\IncomingInspection.exe

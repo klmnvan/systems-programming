@@ -225,10 +225,10 @@ void T4Z3()
 	li* list = createList(10);
 	printf("исходный вид\n");
 	showList(list);
-	//printf("замена элементов с индексами 2 и 6\n");
-	//list = swapItems(list, 2, 6);
-	//showList(list);
-	//list = swapItems(list, 6, 2); //возврат обратно
+	printf("замена элементов с индексами 2 и 6\n");
+	list = swapItems(list, 2, 6);
+	showList(list);
+	list = swapItems(list, 6, 2); //возврат обратно
 	printf("замена элементов с индексами 0 и 1\n");
 	list = swapItems(list, 0, 1);
 	showList(list);
@@ -236,7 +236,11 @@ void T4Z3()
 	printf("замена элементов с индексами 0 и 9\n");
 	list = swapItems(list, 0, 9);
 	showList(list);
-	list = swapItems(list, 0, 8);
+	list = swapItems(list, 0, 9);
+	printf("замена элементов с индексами 8 и 9\n");
+	list = swapItems(list, 8, 9);
+	showList(list);
+	list = swapItems(list, 8, 9);
 }
 
 /// <summary>
@@ -253,28 +257,20 @@ li* swapItems(li* list, int value1, int value2)
 	{
 		int indItem1 = min(value1, value2); //находим мин и макс значения индексов
 		int indItem2 = max(value1, value2);
-		li* item1 = getItemByInd(list, indItem1);
 		li* item2 = getItemByInd(list, indItem2);
-
-		void* start = list;
-
-		if (value1 == 0 || value2 == 0)
-		{
-			start = item2; //если индекс 
-		}
 
 		for (int i = indItem1; i < indItem2; i++)
 		{
 			li* fp = malloc(1 * sizeof(li));
-			if (!(value1 == 0 || value2 == 0)) {
-				fp = getItemByInd(list, i - 1);
-			}
 			li* f = getItemByInd(list, i); //Нашли элемент после 1
 			li* fn = getItemByInd(list, i + 1);
 			void* temp = fn->next; //сохранили, на что указывает item+1 элемент
-			if (!(value1 == 0 || value2 == 0)) {
+			if (i != 0) 
+			{
+				fp = getItemByInd(list, i - 1);
 				fp->next = fn;
-			}
+			} 
+			else list = fn;
 			fn->next = f;
 			f->next = temp;
 		}
@@ -289,31 +285,9 @@ li* swapItems(li* list, int value1, int value2)
 			sn->next = s;
 			s->next = temp;
 		}
+		if (indItem1 == 0) list = item2;
 
-		//li* fp = getItemByInd(list, indItem1 - 1);
-		//li* f = getItemByInd(list, indItem1);
-		//li* fn = getItemByInd(list, indItem1 + 1);
-		//li* sp = getItemByInd(list, indItem2 - 2);
-		//li* s = getItemByInd(list, indItem2-1);
-		//li* sn = getItemByInd(list, indItem2);
-
-		//void* temp1 = fn->next;
-		//void* temp2 = sn->next;
-		//fp->next = s;
-		//s->next = fn;
-		//sp->next = f;
-		//f->next = sn;
-
-		return start;
-
-		//for (int i = indItem2-3; i > indItem1 - 1; i--) 
-		//{
-		//	li* sp = getItemByInd(list, i - 1);
-		//	li* s = getItemByInd(list, i); //Нашли элемент после 1
-		//	li* sn = getItemByInd(list, i + 1);
-		//	void* temp = sn->next; //сохранили, на что указывает item+1 элемент
-		//	
-		//}
+		return list;
 
 	}
 
