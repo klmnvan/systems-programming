@@ -255,26 +255,27 @@ li* swapItems(li* list, int value1, int value2)
 	//Способ 3 
 	int indItem1 = min(value1, value2); //находим мин и макс значения индексов
 	int indItem2 = max(value1, value2);
-	li* item1p;
+	li* item1p; //элемент, стоящий до item1
 	li* item1 = getItemByInd(list, indItem1);
-	li* item2 = getItemByInd(list, indItem2);
+	li* item2 = getItemByInd(list, indItem2); 
+	li* item2p = getItemByInd(list, indItem2 - 1); //элемент, стоящий до item2
+	//обработка ситуации, когда один из меняющийхся элементов находится на первом месте
 	if (indItem1 != 0) {
 		item1p = getItemByInd(list, indItem1 - 1);
 		item1p->next = item2;
 	}
-	void* temp = item1->next;
+	li* temp = item1->next; //запомнили значение идущего после item1 указателя до изменения item1.next
 	item1->next = item2->next;
 	item2->next = temp;
-	if (indItem2 - indItem1 != 1) {
-		li* item2p = getItemByInd(list, indItem2 - 1);
-		item2p->next = item1;
-	} else item2->next = item1;
+	//Обработка случая, когда элементы стоят рядом
+	if (indItem2 - indItem1 != 1) item2p->next = item1; 
+	else item2->next = item1;
 
 	if (indItem1 == 0) list = item2;
 	
 	return list;
 
-	//Способ 2, но он неверный, так как есть способ проще и программе тяжело в цикле работать//Способ 1, но он неверный, так как это удаление и создание новых элементов при смене
+	//Способ 2, но он неверный, так как есть способ проще и программе тяжелее в цикле работать, чем просто поменять
 	
 	/*
 	if (value1 != value2) 
@@ -317,7 +318,7 @@ li* swapItems(li* list, int value1, int value2)
 	//обработка исключения на равные значения
 	
 
-	//Способ 1, но он неверный, так как это удаление и создание новых элементов при смене
+	//Способ 1, но он неверный, так как это удаление и создание новых элементов, а не замена
 
 	//li item1 = *(getItemByInd(list, value1)); //сохранили значение 1 элемента
 	//li item2 = *(getItemByInd(list, value2)); //сохранили значение 2 элемента

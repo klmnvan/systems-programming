@@ -1,1 +1,121 @@
-﻿  IncomingInspection.vcxproj -> C:\Users\климычевааа\source\repos\systems-programming\x64\Debug\IncomingInspection.exe
+﻿  Source.c
+D:\VS prodjects\systems-programming\Theme1.h(41,35): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(41,35): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(48,13): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(48,13): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(53,13): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(53,13): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(40,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(44,10): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(73,35): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[6]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(73,35): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(78,12): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(78,12): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(72,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [3]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(76,10): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(105,28): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[1]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(105,28): warning C4024: inputParameters: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(116,29): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(118,11): warning C4047: функция: "char **" отличается по уровням косвенного обращения от "char **[1]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(118,11): warning C4024: showInfo: различные типы для формального и фактического параметров 1
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(100,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [2]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme1.h(115,9): warning C4047: инициализация: "char **" отличается по уровням косвенного обращения от "char [10]"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme2.h(43,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme2.h(134,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+  (компиляция исходного файла "Source.c")
+  D:\VS prodjects\systems-programming\Theme2.h(134,10):
+  рекомендуется использовать "%zd" в строке форматирования
+  
+D:\VS prodjects\systems-programming\Theme2.h(144,10): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+  (компиляция исходного файла "Source.c")
+  D:\VS prodjects\systems-programming\Theme2.h(144,10):
+  рекомендуется использовать "%zd" в строке форматирования
+  
+D:\VS prodjects\systems-programming\Theme3.h(29,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(55,2): warning C4047: return: "fp_int" отличается по уровням косвенного обращения от "parr"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(118,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(119,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(120,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(121,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(122,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(123,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(124,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(125,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(137,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(138,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(139,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Theme3.h(143,17): warning C4047: =: "parr" отличается по уровням косвенного обращения от "fp_int"
+  (компиляция исходного файла "Source.c")
+  
+D:\VS prodjects\systems-programming\Source.c(143,8): warning C4013: clock: нет определения; предполагается "extern" с возвратом типа "int"
+  IncomingInspection.vcxproj -> D:\VS prodjects\systems-programming\x64\Debug\IncomingInspection.exe
