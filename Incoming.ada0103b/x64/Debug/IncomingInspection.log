@@ -1,1 +1,9 @@
-﻿  IncomingInspection.vcxproj -> D:\VS prodjects\systems-programming\x64\Debug\IncomingInspection.exe
+﻿  Theme5.c
+D:\VS prodjects\systems-programming\CustomHeader.h(39,22): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Theme5.c")
+  
+D:\VS prodjects\systems-programming\CustomHeader.h(56,27): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "Theme5.c")
+  
+D:\VS prodjects\systems-programming\Theme5.c(28,9): warning C4477: "printf": в строке форматирования "%lf" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+  IncomingInspection.vcxproj -> D:\VS prodjects\systems-programming\x64\Debug\IncomingInspection.exe

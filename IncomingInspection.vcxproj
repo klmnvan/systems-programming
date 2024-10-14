@@ -135,7 +135,7 @@
     <ClCompile Include="Theme5.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CustomHeaders.h" />
+    <ClInclude Include="CustomHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

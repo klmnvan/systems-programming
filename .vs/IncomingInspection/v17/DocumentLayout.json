@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\VS prodjects\\systems-programming\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\CustomHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:CustomHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\Theme5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|D:\\VS prodjects\\systems-programming\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,6 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CustomHeader.h",
+              "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\CustomHeader.h",
+              "RelativeDocumentMoniker": "CustomHeader.h",
+              "ToolTip": "D:\\VS prodjects\\systems-programming\\CustomHeader.h",
+              "RelativeToolTip": "CustomHeader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-14T19:46:46.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Theme5.c",
+              "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\Theme5.c",
+              "RelativeDocumentMoniker": "Theme5.c",
+              "ToolTip": "D:\\VS prodjects\\systems-programming\\Theme5.c",
+              "RelativeToolTip": "Theme5.c",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-14T19:46:42.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Source.c",
               "DocumentMoniker": "D:\\VS prodjects\\systems-programming\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
