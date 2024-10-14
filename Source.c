@@ -5,11 +5,6 @@
 #include <string.h>
 #include <locale.h>
 #include <stdbool.h>
-#include "Theme1.h"
-#include "Theme2.h"
-#include "Theme3.h"
-#include "Theme4.h"
-#include "Theme5.h"
 
 void theme5() {
 	int task;

@@ -128,14 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.c" />
+    <ClCompile Include="Theme1.c" />
+    <ClCompile Include="Theme2.c" />
+    <ClCompile Include="Theme3.c" />
+    <ClCompile Include="Theme4.c" />
+    <ClCompile Include="Theme5.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomHeaders.h" />
-    <ClInclude Include="Theme3.h" />
-    <ClInclude Include="Theme1.h" />
-    <ClInclude Include="Theme2.h" />
-    <ClInclude Include="Theme4.h" />
-    <ClInclude Include="Theme5.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
