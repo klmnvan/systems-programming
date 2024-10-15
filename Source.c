@@ -6,6 +6,26 @@
 #include <locale.h>
 #include <stdbool.h>
 
+void theme6() {
+	int task;
+	printf("ТЕМА: Директивы препроцессора\n");
+	printf("Введите номер задания (1): ");
+	scanf("%d", &task);
+	printf("\n");
+	switch (task)
+	{
+	case 1:
+		T6Z2();
+		break;
+	case 2:
+		T6Z3();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
 void theme5() {
 	int task;
 	printf("ТЕМА: Линейные односвязные списки\n");
@@ -163,6 +183,9 @@ void main(void)
 		break;
 	case 5:
 		theme5();
+		break;
+	case 6:
+		theme6();
 		break;
 	default:
 		printf("Такой темы нет");

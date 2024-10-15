@@ -33,6 +33,9 @@
     <ClCompile Include="Theme5.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Theme6.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomHeader.h">

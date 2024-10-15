@@ -133,6 +133,7 @@
     <ClCompile Include="Theme3.c" />
     <ClCompile Include="Theme4.c" />
     <ClCompile Include="Theme5.c" />
+    <ClCompile Include="Theme6.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomHeader.h" />

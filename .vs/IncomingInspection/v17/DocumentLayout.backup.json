@@ -3,24 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:CustomHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:CustomHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,65 +42,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Theme4.h",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.h",
-              "RelativeDocumentMoniker": "Theme4.h",
-              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.h",
-              "RelativeToolTip": "Theme4.h",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAiwAcBAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T12:15:46.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Theme3.h",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme3.h",
-              "RelativeDocumentMoniker": "Theme3.h",
-              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme3.h",
-              "RelativeToolTip": "Theme3.h",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T12:16:03.744Z",
+              "Title": "Theme6.c",
+              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme6.c",
+              "RelativeDocumentMoniker": "Theme6.c",
+              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme6.c",
+              "RelativeToolTip": "Theme6.c",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-15T11:28:53.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CustomHeaders.h",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeaders.h",
-              "RelativeDocumentMoniker": "CustomHeaders.h",
-              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeaders.h",
-              "RelativeToolTip": "CustomHeaders.h",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADsAAAAPAAAAAAAAAA==",
+              "Title": "stdio.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ViewState": "AgIAAHICAAAAAAAAAAAiwIUCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-13T22:00:28.389Z",
+              "WhenOpened": "2024-10-15T10:48:23.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Theme4.c",
+              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.c",
+              "RelativeDocumentMoniker": "Theme4.c",
+              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme4.c",
+              "RelativeToolTip": "Theme4.c",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAiwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-15T10:40:48.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomHeader.h",
+              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeader.h",
+              "RelativeDocumentMoniker": "CustomHeader.h",
+              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\CustomHeader.h",
+              "RelativeToolTip": "CustomHeader.h",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAFEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-14T19:46:46.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Theme5.c",
+              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.c",
+              "RelativeDocumentMoniker": "Theme5.c",
+              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.c",
+              "RelativeToolTip": "Theme5.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-14T19:46:42.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAH8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-13T22:44:39.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Theme5.h",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.h",
-              "RelativeDocumentMoniker": "Theme5.h",
-              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme5.h",
-              "RelativeToolTip": "Theme5.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-13T22:17:20.436Z"
+              "WhenOpened": "2024-10-13T22:44:39.45Z",
+              "EditorCaption": ""
             }
           ]
         }

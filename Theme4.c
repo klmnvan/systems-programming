@@ -62,7 +62,10 @@ li* createList(int count)
 {
 	li* start = malloc(sizeof(li));
 	start->id = 1;
-	start->string = "Эл. 1";
+	char* startStr = malloc(6);
+	strcpy(startStr, "Эл. 1");
+	//startStr = "Эл. 1";
+	start->string = startStr;
 	start->next = NULL;
 
 	li* p, * n; //указатель на предыдущий и следующий элемент
@@ -72,8 +75,10 @@ li* createList(int count)
 	for (int i = 0; i < count - 1; i++) {
 		n = malloc(sizeof(li)); //выделили память под следующий элемент
 		n->id = p->id + 1;
-		char* newStr = malloc(100 * 1);
-		sprintf(newStr, "Эл. %d", i + 2);
+		char* newStr = malloc(10);
+		char valuesStr[100];
+		sprintf(valuesStr, "Эл. %d", i + 2);
+		strcpy(newStr, valuesStr);
 		n->string = newStr;
 		p->next = n;
 		p = n;
@@ -103,28 +108,28 @@ void T4Z2()
 {
 	li* list = createList(10);
 	showList(list);
-	li item = { 88, NULL };
+	li item = { 88, "Эл. НОВЫЙ", NULL};
 	printf("вставка в самый конец\n");
 	list = insert(list, item, 10); //вставка в самый конец
 	showList(list);
 	printf("удалили с конца\n");
 	list = deleteLIByInd(list, 10); //удалили с конца
 	showList(list);
-	li item1 = { 88, NULL };
+	li item1 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка в самое начало\n");
 	list = insert(list, item1, 0); //вставка в самое начало
 	showList(list);
 	printf("удалили с самого начала\n");
 	list = deleteLIByInd(list, 0); //удалили с самого начала
 	showList(list);
-	li item2 = { 88, NULL };
+	li item2 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка на второе место\n");
 	list = insert(list, item1, 1); //вставка на второе место
 	showList(list);
 	printf("удалили с второго места\n");
 	list = deleteLIByInd(list, 1); //удалили с второго места
 	showList(list);
-	li item3 = { 88, NULL };
+	li item3 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка в центр\n");
 	list = insert(list, item1, 5); //вставка в центр
 	showList(list);
@@ -145,6 +150,7 @@ li* insert(li* list, li item, int index)
 {
 	li* newItem = malloc(sizeof(li));
 	newItem->id = item.id;
+	newItem->string = item.string;
 
 	//обработка случая, когда index = 0
 	if (index == 0)
@@ -224,6 +230,7 @@ void freeList(li* list)
 	while (n != NULL) //пока следующий не равен NULL
 	{
 		n = list->next;
+		free(list->string);
 		free(list);
 		list = n;
 	}
