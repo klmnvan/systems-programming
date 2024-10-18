@@ -1,6 +1,4 @@
 ﻿  Theme6.c
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(20,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(31,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(32,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(33,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(34,37): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(39,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   IncomingInspection.vcxproj -> C:\Users\климычевааа\Source\Repos\systems-programming\x64\Debug\IncomingInspection.exe

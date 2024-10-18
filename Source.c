@@ -9,6 +9,8 @@
 void theme6() {
 	int task;
 	printf("ТЕМА: Директивы препроцессора\n");
+	printf("1. \n");
+	printf("2. \n");
 	printf("Введите номер задания (1): ");
 	scanf("%d", &task);
 	printf("\n");

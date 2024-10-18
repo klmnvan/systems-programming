@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Kr1.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="Theme1.c" />
     <ClCompile Include="Theme2.c" />
