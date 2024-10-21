@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IncomingInspection", "IncomingInspection.vcxproj", "{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Задания", "Задания", "{CD4F00BD-5355-4387-81EC-134E8307CE15}"
+	ProjectSection(SolutionItems) = preProject
+		Files_task.txt = Files_task.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

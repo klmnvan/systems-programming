@@ -32,15 +32,15 @@ struct ListItem
 	char* string; //Строка
 	struct ListItem* next; //Ссылка на следующий элемент списка
 };
-typedef struct ListItem li;
+typedef struct ListItem likr;
 
-li* createList(int);
-void showList(li*);
-li* insert(li*, li, int);
-li* getItemByInd(li*, int);
-li* deleteLIByInd(li*, int);
-void freeList(li*);
-li* swapItems(li*, int, int);
+likr* createList(int);
+void showList(likr*);
+likr* insert(likr*, likr, int);
+likr* getItemByInd(likr*, int);
+likr* deleteLIByInd(likr*, int);
+void freeList(likr*);
+likr* swapItems(likr*, int, int);
 int min(int, int);
 int max(int, int);
 
@@ -49,7 +49,7 @@ int max(int, int);
 /// </summary>
 void T4Z1()
 {
-	li* list = createList(10);
+	likr* list = createList(10);
 	showList(list);
 }
 
@@ -58,9 +58,9 @@ void T4Z1()
 /// </summary>
 /// <param name="count">количество элементов</param>
 /// <returns>указатель на начало списка</returns>
-li* createList(int count)
+likr* createList(int count)
 {
-	li* start = malloc(sizeof(li));
+	likr* start = malloc(sizeof(likr));
 	start->id = 1;
 	char* startStr = malloc(6);
 	strcpy(startStr, "Эл. 1");
@@ -68,12 +68,12 @@ li* createList(int count)
 	start->string = startStr;
 	start->next = NULL;
 
-	li* p, * n; //указатель на предыдущий и следующий элемент
+	likr* p, * n; //указатель на предыдущий и следующий элемент
 	p = start;
 
 	//(count - 1) - потому что первый элемент уже создан
 	for (int i = 0; i < count - 1; i++) {
-		n = malloc(sizeof(li)); //выделили память под следующий элемент
+		n = malloc(sizeof(likr)); //выделили память под следующий элемент
 		n->id = p->id + 1;
 		char* newStr = malloc(10);
 		char valuesStr[100];
@@ -91,7 +91,7 @@ li* createList(int count)
 /// Вывод всех элементов списка
 /// </summary>
 /// <param name="list">указатель на начало списка</param>
-void showList(li* list)
+void showList(likr* list)
 {
 	while (list != NULL)
 	{
@@ -106,30 +106,30 @@ void showList(li* list)
 /// </summary>
 void T4Z2()
 {
-	li* list = createList(10);
+	likr* list = createList(10);
 	showList(list);
-	li item = { 88, "Эл. НОВЫЙ", NULL};
+	likr item = { 88, "Эл. НОВЫЙ", NULL};
 	printf("вставка в самый конец\n");
 	list = insert(list, item, 10); //вставка в самый конец
 	showList(list);
 	printf("удалили с конца\n");
 	list = deleteLIByInd(list, 10); //удалили с конца
 	showList(list);
-	li item1 = { 88, "Эл. НОВЫЙ", NULL };
+	likr item1 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка в самое начало\n");
 	list = insert(list, item1, 0); //вставка в самое начало
 	showList(list);
 	printf("удалили с самого начала\n");
 	list = deleteLIByInd(list, 0); //удалили с самого начала
 	showList(list);
-	li item2 = { 88, "Эл. НОВЫЙ", NULL };
+	likr item2 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка на второе место\n");
 	list = insert(list, item1, 1); //вставка на второе место
 	showList(list);
 	printf("удалили с второго места\n");
 	list = deleteLIByInd(list, 1); //удалили с второго места
 	showList(list);
-	li item3 = { 88, "Эл. НОВЫЙ", NULL };
+	likr item3 = { 88, "Эл. НОВЫЙ", NULL };
 	printf("вставка в центр\n");
 	list = insert(list, item1, 5); //вставка в центр
 	showList(list);
@@ -146,9 +146,9 @@ void T4Z2()
 /// <param name="item">вставляемый элемент</param>
 /// <param name="index">индекс, на какое место нужно вставить элемент</param>
 /// <returns>указатель на начало списка</returns>
-li* insert(li* list, li item, int index)
+likr* insert(likr* list, likr item, int index)
 {
-	li* newItem = malloc(sizeof(li));
+	likr* newItem = malloc(sizeof(likr));
 	newItem->id = item.id;
 	newItem->string = item.string;
 
@@ -178,7 +178,7 @@ li* insert(li* list, li item, int index)
 /// <param name="list">указатель на начало списка</param>
 /// <param name="index">индекс элемента</param>
 /// <returns>указатель на начало списка</returns>
-li* getItemByInd(li* list, int index)
+likr* getItemByInd(likr* list, int index)
 {
 	for (int i = 0; i < index; i++)
 	{
@@ -194,9 +194,9 @@ li* getItemByInd(li* list, int index)
 /// <param name="list">указатель на начало списка</param>
 /// <param name="index">индекс нужного элемента</param>
 /// <returns>указатель на начало списка</returns>
-li* deleteLIByInd(li* list, int index)
+likr* deleteLIByInd(likr* list, int index)
 {
-	li* start = list;
+	likr* start = list;
 	if (index == 0)
 	{
 		start = list->next;
@@ -204,11 +204,11 @@ li* deleteLIByInd(li* list, int index)
 	}
 	else
 	{
-		li* delLI = getItemByInd(list, index); //удаляемый элемент
-		li* pDelLI = getItemByInd(list, index - 1); //элемент до удалённого
+		likr* delLI = getItemByInd(list, index); //удаляемый элемент
+		likr* pDelLI = getItemByInd(list, index - 1); //элемент до удалённого
 		if (delLI->next != NULL)
 		{
-			li* nDelLI = getItemByInd(list, index + 1); //элемент после удалённого
+			likr* nDelLI = getItemByInd(list, index + 1); //элемент после удалённого
 			pDelLI->next = nDelLI;
 		}
 		else
@@ -224,9 +224,9 @@ li* deleteLIByInd(li* list, int index)
 /// Очищает память списка
 /// </summary>
 /// <param name="list">указатель на начало списка</param>
-void freeList(li* list)
+void freeList(likr* list)
 {
-	li* n = list; //следующее значение
+	likr* n = list; //следующее значение
 	while (n != NULL) //пока следующий не равен NULL
 	{
 		n = list->next;
@@ -241,7 +241,7 @@ void freeList(li* list)
 /// </summary>
 void T4Z3()
 {
-	li* list = createList(10);
+	likr* list = createList(10);
 	printf("исходный вид\n");
 	showList(list);
 	printf("замена элементов с индексами 2 и 6\n");
@@ -269,21 +269,21 @@ void T4Z3()
 /// <param name="value1">индекс первого элемента</param>
 /// <param name="value2">индекс второго элемента</param>
 /// <returns>указатель на начало списка</returns>
-li* swapItems(li* list, int value1, int value2)
+likr* swapItems(likr* list, int value1, int value2)
 {
 	//Способ 3 
 	int indItem1 = min(value1, value2); //находим мин и макс значения индексов
 	int indItem2 = max(value1, value2);
-	li* item1p; //элемент, стоящий до item1
-	li* item1 = getItemByInd(list, indItem1);
-	li* item2 = getItemByInd(list, indItem2);
-	li* item2p = getItemByInd(list, indItem2 - 1); //элемент, стоящий до item2
+	likr* item1p; //элемент, стоящий до item1
+	likr* item1 = getItemByInd(list, indItem1);
+	likr* item2 = getItemByInd(list, indItem2);
+	likr* item2p = getItemByInd(list, indItem2 - 1); //элемент, стоящий до item2
 	//обработка ситуации, когда один из меняющийхся элементов находится на первом месте
 	if (indItem1 != 0) {
 		item1p = getItemByInd(list, indItem1 - 1);
 		item1p->next = item2;
 	}
-	li* temp = item1->next; //запомнили значение идущего после item1 указателя до изменения item1.next
+	likr* temp = item1->next; //запомнили значение идущего после item1 указателя до изменения item1.next
 	item1->next = item2->next;
 	item2->next = temp;
 	//Обработка случая, когда элементы стоят рядом
