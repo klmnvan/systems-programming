@@ -1,4 +1,8 @@
-﻿  Theme6.c
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(34,37): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\климычевааа\source\repos\systems-programming\Theme6.c(39,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-  IncomingInspection.vcxproj -> C:\Users\климычевааа\Source\Repos\systems-programming\x64\Debug\IncomingInspection.exe
+﻿  Theme8_Files.c
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(21,2): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(27,3): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(81,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(84,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(85,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(92,31): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  IncomingInspection.vcxproj -> C:\Users\климычевааа\source\repos\systems-programming\x64\Debug\IncomingInspection.exe

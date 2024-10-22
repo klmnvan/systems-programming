@@ -6,6 +6,59 @@
 #include <locale.h>
 #include <stdbool.h>
 
+void theme8() {
+	system("chcp 1251>nul");
+	int n;
+	printf("Список заданий.\n");
+	printf("1.\n");
+	printf("2.\n");
+	printf("3.\n");
+	printf("Введите номер задания: ");
+	scanf("%d", &n);
+	getchar();
+	switch (n)
+	{
+	case 1:
+		T8Z1();
+		break;
+	case 2:
+		
+		break;
+	case 3:
+		
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
+void theme7() {
+	system("chcp 1251>nul");
+	int n;
+	printf("Список заданий.\n");
+	printf("1.\n");
+	printf("2.\n");
+	printf("3.\n");
+	printf("Введите номер задания: ");
+	scanf("%d", &n);
+	switch (n)
+	{
+	case 1:
+		z1();
+		break;
+	case 2:
+		z2();
+		break;
+	case 3:
+		z3();
+		break;
+	default:
+		printf("Такого задания нет");
+		break;
+	}
+}
+
 void theme6() {
 	int task;
 	printf("ТЕМА: Директивы препроцессора\n");
@@ -158,7 +211,6 @@ void main(void)
 {
 	system("chcp 1251>nul");
 	srand(clock());
-	//theme2();
 	int theme;
 	printf("Перечень тем:\n");
 	printf("1. Входной контроль.\n");
@@ -166,8 +218,12 @@ void main(void)
 	printf("3. Делегаты.\n");
 	printf("4. Линейные односвязные списки.\n");
 	printf("5. Заголовочные файлы.\n");
+	printf("6. Директивы препроцессора.\n");
+	printf("7. Контрольная работа на указатели.\n");
+	printf("8. Работа с файлами средствами языка си.\n");
 	printf("Введите номер темы (1-*): ");
 	scanf("%d", &theme);
+	getchar();
 	printf("\n");
 	switch (theme)
 	{
@@ -188,6 +244,12 @@ void main(void)
 		break;
 	case 6:
 		theme6();
+		break;
+	case 7:
+		theme7();
+		break;
+	case 8:
+		theme8();
 		break;
 	default:
 		printf("Такой темы нет");

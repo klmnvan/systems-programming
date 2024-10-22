@@ -5,28 +5,36 @@
 #include <string.h>
 #include <locale.h>
 #include <stdbool.h>
-#define cvad(A) (A * A)
-#define sum(n1, n2) (n1 + n2)
-
-#define AX 1
-#define AY 2
-#define BX 1
-#define BY 2
-#define CX 5
-#define CY 6
-
-#define AB (sqrt(cvad((AX - BX)) + cvad((AY - BY))))
-#define BC (sqrt(cvad((BX - CX)) + cvad((BY - CY))))
-#define AC (sqrt(cvad((CX - AX)) + cvad((CY - AY))))
-
-#define K (BY - (AY)) / (BX - (AX))
-#define B (AY)-(K)*(AX)
-
-#define P (AB) + (BC) + (AC)
-#define p (P)/2
-#define S sqrt(p * (p - AB) * (p - BC) * (p - (AC)))
 
 //Задание на директивы препроцессора
+
+#define cvad(A) (A * A) //квадрат числа
+#define sum(n1, n2) (n1 + n2) //сумма чисел
+
+#define AX 1  //x1  0  1  1  1 	0 
+#define AY 2  //y1  4  2  2  2 	4 
+#define BX 3  //x2  3  4  3  4 	0 
+#define BY 4  //y2  0  3  4  3 	4 
+#define CX 5  //x3  4  6  5  10	4 
+#define CY 6  //y3  5  1  6  1 	5 
+
+#define AB (sqrt(cvad((AX - BX)) + cvad((AY - BY)))) //сторона AB (сработает только после запуска программы)
+#define BC (sqrt(cvad((BX - CX)) + cvad((BY - CY)))) //сторона BC (сработает только после запуска программы)
+#define AC (sqrt(cvad((CX - AX)) + cvad((CY - AY)))) //сторона AC (сработает только после запуска программы)
+
+#define K (BY - (AY)) / (BX - (AX)) //Что это за покемон даже не ясно
+#define B (AY)-(K)*(AX) //Что это за покемон даже не ясно
+
+#define P (AB) + (BC) + (AC) //Периметр треугольника
+#define p (P)/2 //Полупериметр треугольника
+#define S sqrt(p * (p - AB) * (p - BC) * (p - (AC))) //Площадь треугольника (сработает только после запуска программы)
+
+//попытки придумать что-то гениальное
+#define AB_CVAD (cvad((AX - BX)) + cvad((AY - BY))) //сторона AB в квадрате
+#define BC_CVAD (cvad((BX - CX)) + cvad((BY - CY))) //сторона BC в квадрате
+#define AC_CVAD (cvad((CX - AX)) + cvad((CY - AY))) //сторона AC в квадрате
+
+#define S_BY_COORDINAT ((AX * (BY - CY) + BX * (CY - AY) + CX * (AY - BY)) / 2) //площаь по координатам
 
 //С помощью данного макроса решите задачу на нахождение длины отрезка по координатам двух его точек.
 void T6Z2() 
@@ -61,10 +69,10 @@ void T6Z3()
 	//}
 	//else printf("Не существует\n");
 
-#if (((AX == BX) && ((AX!=CX) || (BX!=CY))) || !(CY == K * CX + B)) && (!((AX == BX) && (BX == CX) && (CX == AX)) && !((AY == BY) && (BY == CY) && (CY == AY))) || !(CY == K * CX + B)
+#if (S_BY_COORDINAT > 0)
 	printf("Треугольник существует. Периметр = %f, площадь = %f\n", P, S);
 #else
-	printf("Треугольник построить нельзя");
+	printf("Треугольник построить нельзя\n");
 #endif
-
+	printf("%d", S_BY_COORDINAT);
 }

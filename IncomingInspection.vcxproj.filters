@@ -39,6 +39,9 @@
     <ClCompile Include="Kr1.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Theme8_Files.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomHeader.h">
