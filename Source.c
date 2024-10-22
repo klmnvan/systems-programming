@@ -15,6 +15,7 @@ void theme8() {
 	printf("3.\n");
 	printf("Введите номер задания: ");
 	scanf("%d", &n);
+	getchar();
 	switch (n)
 	{
 	case 1:
@@ -210,7 +211,6 @@ void main(void)
 {
 	system("chcp 1251>nul");
 	srand(clock());
-	//theme2();
 	int theme;
 	printf("Перечень тем:\n");
 	printf("1. Входной контроль.\n");
@@ -223,6 +223,7 @@ void main(void)
 	printf("8. Работа с файлами средствами языка си.\n");
 	printf("Введите номер темы (1-*): ");
 	scanf("%d", &theme);
+	getchar();
 	printf("\n");
 	switch (theme)
 	{

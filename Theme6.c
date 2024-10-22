@@ -11,12 +11,12 @@
 #define cvad(A) (A * A) //квадрат числа
 #define sum(n1, n2) (n1 + n2) //сумма чисел
 
-#define AX 0  //x1  0  1  1  1 
-#define AY 4  //y1  4  2  2  2 
-#define BX 0  //x2  3  4  3  4 
-#define BY 4  //y2  0  3  4  3 
-#define CX 4  //x3  4  6  5  10
-#define CY 5  //y3  5  1  6  1 
+#define AX 1  //x1  0  1  1  1 	0 
+#define AY 2  //y1  4  2  2  2 	4 
+#define BX 3  //x2  3  4  3  4 	0 
+#define BY 4  //y2  0  3  4  3 	4 
+#define CX 5  //x3  4  6  5  10	4 
+#define CY 6  //y3  5  1  6  1 	5 
 
 #define AB (sqrt(cvad((AX - BX)) + cvad((AY - BY)))) //сторона AB (сработает только после запуска программы)
 #define BC (sqrt(cvad((BX - CX)) + cvad((BY - CY)))) //сторона BC (сработает только после запуска программы)
