@@ -1,8 +1,12 @@
-﻿  Theme8_Files.c
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(21,2): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(27,3): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(81,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(84,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(85,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\климычевааа\source\repos\systems-programming\Theme8_Files.c(92,31): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-  IncomingInspection.vcxproj -> C:\Users\климычевааа\source\repos\systems-programming\x64\Debug\IncomingInspection.exe
+﻿  Theme8_WinAPI.c
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(21,2): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(28,3): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(79,10): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(82,10): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(85,10): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(138,46): warning C4267: функция: преобразование из "size_t" в "DWORD"; возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(107,24): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(110,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(111,35): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\климычевааа\source\repos\systems-programming\Theme8_WinAPI.c(118,34): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  IncomingInspection.vcxproj -> C:\Users\климычевааа\Source\Repos\systems-programming\x64\Debug\IncomingInspection.exe

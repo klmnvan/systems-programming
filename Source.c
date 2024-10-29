@@ -19,7 +19,7 @@ void theme8() {
 	switch (n)
 	{
 	case 1:
-		T8Z1();
+		T9Z1();
 		break;
 	case 2:
 		

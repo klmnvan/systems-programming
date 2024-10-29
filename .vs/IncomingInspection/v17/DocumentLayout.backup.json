@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_Files.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme8_Files.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_WinAPI.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|solutionrelative:Theme8_WinAPI.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADA0103B-809D-4F28-854C-B3BF3A48FFDA}|IncomingInspection.vcxproj|C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -21,12 +21,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -35,22 +31,22 @@
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
               "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "ViewState": "AgIAAHQCAAAAAAAAAAAQwIUCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwFAAAAAAAAAAAiwG8FAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-22T11:36:56.535Z",
+              "WhenOpened": "2024-10-29T11:38:53.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Theme8_Files.c",
-              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_Files.c",
-              "RelativeDocumentMoniker": "Theme8_Files.c",
-              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_Files.c",
-              "RelativeToolTip": "Theme8_Files.c",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwEcAAAAeAAAAAAAAAA==",
+              "Title": "Theme8_WinAPI.c",
+              "DocumentMoniker": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_WinAPI.c",
+              "RelativeDocumentMoniker": "Theme8_WinAPI.c",
+              "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Theme8_WinAPI.c",
+              "RelativeToolTip": "Theme8_WinAPI.c",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-22T10:37:35.823Z",
+              "WhenOpened": "2024-10-29T10:37:17.711Z",
               "EditorCaption": ""
             },
             {
@@ -61,7 +57,7 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\\u043A\u043B\u0438\u043C\u044B\u0447\u0435\u0432\u0430\u0430\u0430\\source\\repos\\systems-programming\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAQwNQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-13T22:44:39.45Z",
               "EditorCaption": ""
